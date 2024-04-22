@@ -1,10 +1,13 @@
 import React from 'react'
 import { Button } from "@/components/ui/button"
+import Appbar from '@/components/Appbar'
+import HeaderHome from '@/components/HeaderHome'
 
 function Home() {
   return (
-    <div>
-      <Button>Click me</Button>
+    <div className=''>
+        <Appbar/>
+        <HeaderHome/>
     </div>
   )
 }
