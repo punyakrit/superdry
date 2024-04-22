@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import bg from "@/public/assets/about.webp";
-import aboutbg from "@/public/assets/glow-bg.svg";
 
 function About() {
   return (
