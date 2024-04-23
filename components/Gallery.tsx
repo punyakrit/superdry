@@ -28,10 +28,10 @@ function Gallery() {
       );
   return (
     <div className="py-10">
-      <div className="flex justify-center text-5xl font-bold text-[#281c14] py-6">
+      <div className="flex justify-center text-3xl md:text-5xl font-bold text-[#281c14] py-6">
         Our Gallery
       </div>
-      <div className="text-center text-gray-400 text-md">
+      <div className="text-center text-gray-400 text-sm md:text-md">
         The freedom of choosing your preferred laundary service provider from
         our list of experts
       </div>
