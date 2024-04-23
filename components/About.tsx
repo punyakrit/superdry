@@ -4,7 +4,7 @@ import bg from "@/public/assets/about.webp";
 
 function About() {
   return (
-    <div className=" md:px-16 px-4 h-full  py-32 backdrop-blur-md bg-gradient-to-r from-gray-600   to-gray-900">
+    <div className=" md:px-16 px-4 h-full  py-32 backdrop-blur-md bg-[#281c14]">
       <div className=" text-white md:text-5xl text-4xl font-bold flex justify-center pb-12">
         About SuperDry
       </div>
@@ -13,7 +13,7 @@ function About() {
           <Image
             src={bg}
             alt="superdry about image"
-            className="rounded-3xl shadow-lg h-[250px] w-[250px] sm:h-[300px] sm:w-[300px] ld:h-[350px] lg:w-[400px] object-cover"
+            className="rounded-2xl  h-[250px] w-[250px] sm:h-[300px] sm:w-[300px] ld:h-[350px] lg:w-[500px] object-cover"
           />
         </div>
         <div className="md:w-1/2 py-3">
