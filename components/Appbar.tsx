@@ -11,7 +11,7 @@ function Appbar() {
   }
   return (
     <div>
-      <div className="fixed z-30 h-20 backdrop-blur-sm   rounded-b-3xl items-center lg:px-16 px-6 w-full text-white flex justify-between">
+      <div className="fixed z-30 h-20 backdrop-blur-sm bg-black/40  rounded-b-3xl items-center lg:px-16 px-6 w-full text-white flex justify-between">
         <div className="text-3xl font-bold">SuperDry</div>
         <div className="md:hidden">
           <FaBars className=" text-3xl cursor-pointer" onClick={toggleMenu} />
