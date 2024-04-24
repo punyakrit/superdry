@@ -26,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+
         <title>{"SuperDry - Your Ultimate Laundry Solution"}</title>
         <meta
           name="description"
