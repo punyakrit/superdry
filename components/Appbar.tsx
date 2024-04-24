@@ -2,15 +2,13 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
-import { signIn, signOut } from "next-auth/react";
+// import { signIn, signOut } from "next-auth/react";
 import { useSession } from "next-auth/react";
 import Image from "next/image";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
@@ -19,7 +17,9 @@ function Appbar() {
   function toggleMenu() {
     setMenu(!menu);
   }
-  const { status, data: session } = useSession();
+  const status = "authenticated"
+
+  // const { status, data: session } = useSession();
   return (
     <div>
       <div className="fixed z-30 h-20 backdrop-blur-sm bg-black/40  rounded-b-3xl items-center lg:px-16 px-6 w-full text-white flex justify-between">
@@ -36,7 +36,7 @@ function Appbar() {
           {status !== "authenticated" ? (
             <div
               onClick={() => {
-                signIn("google");
+                // signIn("google");
               }}
               className="cursor-pointer px-7 py-2 border border-white hover:bg-white hover:text-black"
             >
@@ -46,7 +46,9 @@ function Appbar() {
             <DropdownMenu>
               <DropdownMenuTrigger>
                 <Image
-                  src={session?.user?.image || ""}
+                  src={
+                    // session?.user?.image ||
+                     ""}
                   width={40}
                   height={40}
                   alt="user-image"
@@ -55,7 +57,9 @@ function Appbar() {
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem>Profile</DropdownMenuItem>
-                <DropdownMenuItem onClick={() => signOut()}>
+                <DropdownMenuItem 
+                // onClick={() => signOut()}
+                >
                   Log out
                 </DropdownMenuItem>
               </DropdownMenuContent>
@@ -86,7 +90,7 @@ function Appbar() {
               {status !== "authenticated" ? (
                 <div
                   onClick={() => {
-                    signIn("google");
+                    // signIn("google");
                   }}
                   className="cursor-pointer text-2xl font-semibold transition duration-300"
                 >
@@ -95,7 +99,7 @@ function Appbar() {
               ) : (
                 <div
                   onClick={() => {
-                    signOut();
+                    // signOut();
                   }}
                   className="cursor-pointer text-2xl font-semibold transition duration-300"
                 >

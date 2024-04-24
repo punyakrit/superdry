@@ -1,10 +1,12 @@
-import Home from '@/pages/Home'
+import Main from '@/pages/Main'
 import React from 'react'
 
 function page() {
+
+  
   return (
     <div>
-      <Home/>
+      <Main/>
     </div>
   )
 }

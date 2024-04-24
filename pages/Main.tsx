@@ -8,7 +8,7 @@ import Accordian from '@/components/Accordian'
 import Book from '@/components/Book'
 import Footer from '@/components/Footer'
 
-function Home() {
+function Main() {
   return (
     <div className=''>
         <Appbar/>
@@ -23,4 +23,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Main
