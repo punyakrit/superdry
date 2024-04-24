@@ -3,7 +3,7 @@ import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 
 import { cn } from "@/lib/utils";
-// import { NextAuthProvider } from "./providers";
+import { Providers } from "./providers";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -47,9 +47,7 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        {/* <NextAuthProvider> */}
-          {children}
-          {/* </NextAuthProvider> */}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
