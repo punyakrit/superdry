@@ -8,7 +8,23 @@ const userSchema = new Schema({
     name: {
         type: String,
         required: true
-    }
+    },
+    admin:{
+        type:Boolean,
+        required: false,
+        default: false,
+    },
+    user:{
+        type:Boolean,
+        required: false,
+        default: true,
+    },
+    employee:{
+        type:Boolean,
+        required: false,
+        default: false,
+    },
+
 }, { timestamps: true });
 
 const User = mongoose.models.User || mongoose.model('User', userSchema);
